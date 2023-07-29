@@ -1,6 +1,7 @@
 ﻿
 //using static SOLID_Principles_in_C_.OCP;
-using static SOLID_Principles_in_C_.LSP;
+//using static SOLID_Principles_in_C_.LSP;
+using static SOLID_Principles_in_C_.DIP;
 using System.Collections.Generic;
 
 namespace SOLID_Principles_in_C_
@@ -23,6 +24,14 @@ namespace SOLID_Principles_in_C_
             employees.Add(new ContractEmployee(3, "Qasim"));
             */
 
+            /*
+            // DIP: We will pass our engine type to the car externally via abstraction
+            IEngine petrol = new PetrolEngine();
+            Car hondaCivic = new Car(petrol);
+            Car tesla = new Car(new ElectricEngine());
+            hondaCivic.StartCar();
+            tesla.StartCar();
+            */
         }
     }
 }
