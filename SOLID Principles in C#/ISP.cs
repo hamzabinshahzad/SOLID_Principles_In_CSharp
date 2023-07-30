@@ -71,7 +71,7 @@ namespace SOLID_Principles_in_C_
             }
         }
 
-        // Log Storage needs to load every call to every available method, so it will implement all the required interfaces.
+        // Log Storage needs to log every call to every available method, so it will implement all the required interfaces.
         public class LogStorage : IStore, ICache
         {
             public void AddKey()
